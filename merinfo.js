@@ -8,14 +8,13 @@ const fs = require("fs-extra");
   });
   const context = await browser.newContext();
 
-  // const page = await context.newPage()
   // WRITE INPUT FILE
   const inputFile = "20ktill16k.csv";
   // WRITE START NUMBER FROM INPUT FILE  ************
   const orgStartNr = 1;
   // WRITE OUTPUT NAME  ***************
   const outFileName = "merinfo2.csv";
-  // await fs.writeFile(outFileName, 'Orgnummer; Name; Phone; Form; Bundet; BindningsTid\n', 'utf8');git
+
   let loops = 0;
   const maxLoops = 100;
   //   let NrOfOrg = 100;
